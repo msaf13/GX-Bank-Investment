@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%; /* Ensure full width */
+            height: 100%; /* Ensure full height */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        body {
+            background-color: #201030; /* Your specified background color */
+        }
+
+        /* Common menu item styling */
+        .menu-item {
+            position: absolute;
+            font-family: 'Futura', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #FFFFFF; /* Fill color */
+            -webkit-text-stroke: 1px #000000; /* Stroke color */
+            text-decoration: none; /* Remove underline */
+            cursor: pointer;
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Logo styling */
+        .logo {
+            left: 188px; /* X position */
+            top: 30px; /* Y position */
+            width: 162px; /* Width */
+            height: 20px; /* Height */
+        }
+
+        /* About menu */
+        .about {
+            left: 737px; /* X position */
+            top: 30px; /* Y position */
+        }
+
+        /* For Investor menu */
+        .for-investor {
+            left: 923px; /* X position */
+            top: 30px; /* Y position */
+        }
+
+
+
+        /* FM Login menu */
+        .fm-login {
+            left: 1166px; /* X position */
+            top: 30px; /* Y position */
+        }
+
+        /* Hover effect for menu items */
+        .menu-item:hover {
+            color: #8F00FF; /* Change text color on hover */
+            -webkit-text-stroke: 0.5px #000000; /* Stroke color remains */
+        }
+
+        /* Background Image */
+        .background {
+            position: fixed;
+            left: 0px; /* X position */
+            top: 70px; /* Y position */
+            width: 100%; /* Full width */
+            height: calc(100% - 70px); /* Full height minus 70px for the top offset */
+            background-image: url('pic/image-asset.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.5; /* 50% opacity */
+            z-index: -1; /* To make sure it stays behind other content */
+        }
+
+        /* Heading styling */
+        .heading {
+            position: absolute;
+            left: 92px; /* X position */
+            top: 253px; /* Y position */
+            width: 621px; /* Width */
+            height: 128px; /* Height */
+            font-family: 'Futura', sans-serif;
+            font-weight: bold;
+            font-size: 48px; /* Adjusted size for better fit */
+            color: #FFFFFF;
+        }
+
+        /* Subheading styling */
+        .subheading {
+            position: absolute;
+            left: 92px; /* X position */
+            top: 413px; /* Y position adjusted for spacing */
+            width: 100%; /* Full width to prevent wrapping */
+            height: auto; /* Height will adjust based on content */
+            font-family: 'Futura Md BT', sans-serif;
+            font-weight: medium;
+            font-size: 18px; /* Reduced size for better fitting */
+            color: #FFFFFF;
+            line-height: 1.4; /* Added line-height for better text flow */
+            white-space: nowrap; /* Prevent text from wrapping */
+            overflow: hidden; /* Hide overflow text */
+            text-overflow: ellipsis; /* Add ellipsis if text overflows */
+        }
+
+        /* Button styling */
+        .invest-btn {
+            position: absolute;
+            left: 92px; /* X position */
+            top: 495px; /* Y position below subheading */
+            padding: 15px 40px; /* Button padding */
+            font-family: 'Futura', sans-serif;
+            font-weight: bold;
+            font-size: 20px; /* Font size */
+            background-color: #8F00FF; /* Button color */
+            color: #FFFFFF; /* Text color */
+            border: none; /* Remove default border */
+            border-radius: 25px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        /* Button hover effect */
+        .invest-btn:hover {
+            background-color: #7a00cc; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <a href="home.html" class="menu-item logo">
+        GXINVESTMENT
+    </a>
+
+    <!-- About Menu -->
+   
+
+    <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Heading -->
+    <div class="heading">
+        Smart Investments,<br>Better Tomorrow.
+    </div>
+
+    <!-- Subheading -->
+    <div class="subheading">
+        Save and grow your money with our trusted funds.<br>
+        Banking that's always by your side.
+    </div>
+
+    <!-- Invest Now Button -->
+    <button class="invest-btn">
+        INVEST NOW
+    </button>
+</body>
+</html>
